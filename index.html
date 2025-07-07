@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore a variety of indoor plants for your home or office.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Plants</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #c4e2a4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #204b04;
+            margin-bottom: 20px;
+        }
+        .plant-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .plant-container:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #252525;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .price {
+            font-weight: bold;
+            color: #63b520;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #219653;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Indoor Plants</h1>
+
+    <div class="plant-container">
+        <h2>Peace Lily</h2>
+        <p>The Peace Lily, known for its elegant white flowers, is a popular choice for indoor spaces.</p>
+        <p class="price">Price: $15</p>
+        <img src="https://edube.org/uploads/media/default/0001/04/spathiphyllum-peace-lily.jpg" alt="Peace Lily">
+        <a href="#" class="button" onclick="buyPlant('Peace Lily', 15)">Buy</a>
+    </div>
+
+    <div class="plant-container">
+        <h2>Zanzibar Gem</h2>
+        <p>The Zanzibar Gem, with its glossy green foliage, is a low-maintenance indoor plant perfect for beginners.</p>
+        <p class="price">Price: $20</p>
+        <img src="https://edube.org/uploads/media/default/0001/04/zamioculcas-zanzibar-gem.jpg" alt="Zanzibar Gem">
+        <a href="#" class="button" onclick="buyPlant('Zanzibar Gem', 20)">Buy</a>
+    </div>
+
+    <script>
+        function buyPlant(plantName, price) {
+            alert("You have purchased a " + plantName + " for $" + price + "!");
+        }
+    </script>
+</body>
+</html>
+
